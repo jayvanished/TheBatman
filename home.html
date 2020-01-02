@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8"
+    <meta charset="utf-8">;
 </head>
 <title>Batman</title>
+<style>
+    html {
+        font-size:10px;
+    }
+
+    main {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4.0em;
+        margin-bottom: 0;
+    }
+
+    img {
+        max-width: 70%;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #img-div {
+        background: white;
+        padding: 10px;
+        margin: 0;
+    }
+
+    a {
+         color: #477ca7;
+    }
+
+    a:visited {
+        color: #74638f;
+    }
+
+    ul {
+        max-width: 50%;
+        margin: 0 auto 50px auto;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    li {
+        margin: 16px 0;
+    }
+    
+    blockquote {
+        font-style: italic;
+        max-width: 50%;
+        margin: 0 auto 50px auto;
+        text-align: left;
+    }
+
+    .description {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    #subheading {
+        font-style: italic;
+        font-size: 1.6em;
+    }
+</style>
 <html>
-    <main>
-        <h1>Batman</h1>
-        <p>The Caped Crusader, the Dark Knight, the World's Greatest Detective.</p>
-        <p style="font-size: 0.9rem;font-style: italic;"><img style="display: block;" src="https://farm8.staticflickr.com/7702/17031322247_8c638a44da_b.jpg" alt="Batman and Robin from the 1966 television series, Batman."><a href="https://www.flickr.com/photos/57101196@N06/17031322247">"BATMAN"</a><span> by <a href="https://www.flickr.com/photos/57101196@N06">Shed On The Moon</a></span> is licensed under <a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC PDM 1.0</a><a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-pdm_icon.svg" /></a></p>
-        <h2>Who is the Batman?</h2>
-        <p><strong>Bruce Wayne</strong>, the owner of Wayne Enterprises, developed the persona of <strong>Batman</strong> in order to fight crime in Gotham City, having sworn vengeance against the city's criminals after witnessing the murder of his parents as a child. Wayne does not possess any inhuman superpowers, instead relying on martial arts training, powerful intellect, and a large arsenal of weapons and equipment afforded to him by his vast wealth.</p>
+    <main id="main">
+        <h1 id="title">Batman</h1>
+        <p id="subheading">The Caped Crusader, the Dark Knight, the World's Greatest Detective.</p>
+        <div id="img-div"><p style="font-size: 0.9rem;font-style: italic;"><img style="display: block;" src="https://farm8.staticflickr.com/7702/17031322247_8c638a44da_b.jpg" alt="Batman and Robin from the 1966 television series, Batman."><a href="https://www.flickr.com/photos/57101196@N06/17031322247">"BATMAN"</a><span> by <a href="https://www.flickr.com/photos/57101196@N06">Shed On The Moon</a></span> is licensed under <a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC PDM 1.0</a><a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-pdm_icon.svg" /></a></p></div>
+        <div id="tribute-info"><h2>Who is the Batman?</h2>
+        <p class="description"><strong>Bruce Wayne</strong>, the owner of Wayne Enterprises, developed the persona of <strong>Batman</strong> in order to fight crime in Gotham City, having sworn vengeance against the city's criminals after witnessing the murder of his parents as a child. Wayne does not possess any inhuman superpowers, instead relying on martial arts training, powerful intellect, and a large arsenal of weapons and equipment afforded to him by his vast wealth.</p>
         <blockquote>
             <p>"I must have a disguise. Criminals are a superstitious cowardly lot. So my disguise must be able to strike terror into their hearts. I must be a creature of the night, black, terrible...a...a...a bat!"</p>
             <cite>-- Bruce Wayne, <em>Detective Comics #33.</em></cite>
         </blockquote>
         <h3>Who are Batman's allies?</h3>
-        <p>Batman is assisted in his fight against crime in Gotham City by many allies, including:</p>
+        <p class="description">Batman is assisted in his fight against crime in Gotham City by many allies, including:</p>
         <ul>
             <li><strong>Alfred Pennyworth</strong>, Bruce Wayne's butler, one of the few people who knows the true identity of Batman. He is the only other resident of Wayne's residence, Wayne Manor, and acts as a kind of father figure to Bruce Wayne.</li>
             <li><strong>Lucius Fox</strong>, Bruce Wayne's business manager and technology specialist who is responsible for developing equipment for Batman.</li>
@@ -24,7 +91,7 @@
             <li><strong>The Justice League</strong>, a team of fellow superheroes including <strong>Superman</strong>, <strong>Wonder Woman</strong>, <strong>The Flash</strong>, and others.</li>
         </ul>
         <h3>Who are Batman's adversaries?</h3>
-        <p>Batman's long fight against the criminal elements of Gotham have led him into conflict with a number of villanous foes, the most significant of which include:</p>
+        <p class="description">Batman's long fight against the criminal elements of Gotham have led him into conflict with a number of villanous foes, the most significant of which include:</p>
         <ul>
             <li><strong>The Joker</strong>, a psychopathic criminal mastermind of mysterious origins, the Joker is obsessed with Batman and represents everything that Batman is not. His colourful appearance and attire, and his theatrical manner, contrast with that of Batman, as does his tendency to murder on a whim. The Joker frequently attempts to force Batman to kill, to prove that anybody can become a monster, even a hero.</li>
             <li><strong>The Penguin</strong>, the persona of Oswald Cobblepot, a powerful figure in Gotham's criminal underworld and owner of the Iceberg Lounge nightclub. Unlike the Joker, the Penguin is completely sane, and has aspirations of acquiring wealth, power and the respect of Gotham's elite. The Penguin is also obsessed with birds and frequently sets out to steal valuable bird-related items.</li>
@@ -33,7 +100,7 @@
             <li><strong>Bane</strong>, a powerful masked mercenary and terrorist possessing superhuman strength. Bane uses the drug venom to acquire his superhuman strength and immense physicality, and he is also a superintelligent tactician and skilled martial artist.</li>
             <li><strong>Harley Quinn</strong>, formerly the Arkham Asylum psychologist Harleen Quinzel. Quinzel was assigned to treat the Joker and eventually fell in love with the criminal mastermind, becoming an accomplice to his crimes. She adopted a similar persona to the Joker, that of Harley Quinn, and may be considered as the 'Robin' to the Joker's 'Batman'.</li>
             <li><strong>The Riddler</strong>, an intelligent criminal mastermind who is known for incorporating complex riddles, traps and puzzles into his criminal schemes. Riddler is also an accomplished computer programmer, engineer and escape artist.</li>
-        </ul>
+        </ul></div>
         <ul>
         <h2>Batman Timeline</h2>
         <li>
@@ -82,5 +149,6 @@
             <strong>2016</strong> - Zack Snyder's film <em>Batman vs Superman: Dawn of Justice</em> is released, starring Ben Affleck as Batman.
         </li>
         </ul>
+        <h4>For more information about Batman, visit <a id="tribute-link" href="https://en.wikipedia.org/wiki/Batman" target="_blank">Wikipedia</a>.</h4>
     </main>
 </html>
